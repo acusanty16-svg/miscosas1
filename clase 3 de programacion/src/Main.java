@@ -5,8 +5,6 @@ public class Main{
 
         System.out.print("Santiago");
 
-System.out.print("Esteban");
-
     }
 
 }
