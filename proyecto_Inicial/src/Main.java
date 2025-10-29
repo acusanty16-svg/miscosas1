@@ -1,4 +1,8 @@
+import java.sql.SQLOutput;
+
 public class Main{
+    String nombreMio = "Santiago Acuna";
+
     public static void main(String[]args){
         System.out.print("Partir\nen cuerpo y alma\npartir\n\nPartir\ndsahacerse de las miradas\npiedras opresoras\nque duermen en la garganta\n\nHe de partir\nno más inercia bajo el sol\nno más sangre anodada\n\nHe de partir\n\nPero arremete !viajera¡\n");
 
@@ -27,13 +31,17 @@ public class Main{
         char letraCarnet = 'K';
         boolean experiencia = true;
         experiencia = false;
+        final String NUMERODNI = "123123K"; //para que la clasificacion de guardado no cambie, debo de poner un modificador el principio llamado FINAL
 
+        System.out.println("el valor del numero pi es: "+Math.PI);
         System.out.println("Mi nombre es: "+nombreCompleto);
         System.out.println("Mi edad es: "+edad+" años.");
         System.out.println("Mi altura es: "+altura+" cm.");
         System.out.println("Mi peso es: "+peso+" kg.");
         System.out.println("La letra de mi DNI: "+letraCarnet+".");
         System.out.println("tengo experiencia: "+experiencia);
+        System.out.println(nombreCompleto.toUpperCase());
 
 }
-}
+
+ }
