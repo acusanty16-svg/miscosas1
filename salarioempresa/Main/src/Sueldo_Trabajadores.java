@@ -13,4 +13,14 @@ public class Sueldo_Trabajadores {
         System.out.println("Gracias por tu arduo trabajo este mes, y a por mas");
     }
 
+    public int multiplicar(int op1, int op2) {
+        int resultado = op1 * op2;
+        System.out.println("El metodo esta listo para ser retornado"+resultado);
+        return resultado;
+    }
+
+
+    public boolean validarNumero (int numeroValidar) {
+        return numeroValidar > 0;
+    }
 }

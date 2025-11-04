@@ -1,20 +1,28 @@
+import java.util.Scanner;
+
 public class Entrada {
 
     public static void main( String[]args){
         System.out.println("Proyecto metodos");
         System.out.println("Vamos a reaalizar llamadas a metodos\n");
-     saludar("juanito");
-     despedir();
-     saludar("David");
-     despedir();
-     saludar("Maria");
-     despedir();
+    // saludar("juanito");
+    // despedir();
+    // saludar("David");
+    // despedir();
+    // saludar("Maria");
+    // despedir();
     //Operaciones.sumar(4,4); //estoy exportando el resultado desde otra clase, pero es peligroso dejar la clase static, porque me pueden tomar los datos
 
-        Sueldo_Trabajadores sueldodeloschicos = new Sueldo_Trabajadores();
-       sueldodeloschicos.nosaludo("Luis");
-       sueldodeloschicos.Sueldo(120f, 8.65f);
-       sueldodeloschicos.Despedida("");
+       Sueldo_Trabajadores operacioneMatematicas = new Sueldo_Trabajadores();
+      // sueldodeloschicos.nosaludo("luis");
+     //  sueldodeloschicos.Sueldo(120f, 8.65f);
+      // sueldodeloschicos.Despedida("");
+      //  System.out.println(sueldodeloschicos.multiplicar(7,3)*4);
+        Scanner lectorTeclado = new Scanner(System.in);
+        System.out.println("Que numero quieres validar: ");
+        int numeroValidar = lectorTeclado.nextInt();
+        System.out.println("El numero que se intenta validar tiene como resultado: "+operacioneMatematicas.validarNumero(numeroValidar));
+
     }
 
     public static void saludar(String nombreodataoloquesea){
@@ -27,4 +35,5 @@ public class Entrada {
     public static void despedir (){
         System.out.println("Bonico a pasar la tarde en casa\n");
     }
+
 }
