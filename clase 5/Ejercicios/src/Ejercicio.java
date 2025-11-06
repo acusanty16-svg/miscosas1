@@ -54,7 +54,7 @@ public class Ejercicio {
     }
     public void
 */
-   public void ejercicio2 (){
+ /*  public void ejercicio2 (){
         lecturaTeclado = new Scanner(System.in);
         //1.introducir valores
         System.out.println("Valor de la compra(entre 0.00 y 500.00): ");
@@ -78,6 +78,32 @@ public class Ejercicio {
         lecturaTeclado.close();
         lecturaTeclado = null;
     }
+*/
 
+    public void ejercicio3 (){
+
+        //1. introducir 5 numeros
+        lecturaTeclado = new Scanner(System.in);
+        System.out.println("Decenas de miles: ");
+        String decenasMiles = lecturaTeclado.nextLine();
+        lecturaTeclado = new Scanner(System.in);
+        System.out.println("Unidades de mil: ");
+        String unidadesMiles = lecturaTeclado.nextLine();
+        lecturaTeclado = new Scanner(System.in);
+        System.out.println("Centenas: ");
+        String centenasMiles = lecturaTeclado.nextLine();
+        System.out.println("Decenas: ");
+        String decenas = lecturaTeclado.nextLine();
+        lecturaTeclado = new Scanner(System.in);
+        System.out.println("Unidades: ");
+        String unidades = lecturaTeclado.nextLine();
+        lecturaTeclado = new Scanner(System.in);
+
+        String resultado = decenasMiles + unidadesMiles +centenasMiles +decenas +unidades;
+        System.out.println("Numero introducido: "+resultado);
+
+        //2. replicar los numeros con uniones
+        //3. mostrar el resultado
+    }
 }
 
